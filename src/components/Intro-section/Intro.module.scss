@@ -1,0 +1,30 @@
+@use "../../scss/custom" as *;
+@use '../../scss/component/mixin' as *;
+
+.intro-section {
+  @include gradient;
+
+  .video-box {
+    position: relative;
+
+    span {
+      @include absoluteCenter;
+      font-size: 6rem;
+      position: absolute;
+      color: $primary;
+      animation: pulse-border 1s linear infinite;
+    }
+  }
+
+  .info {
+    color: $white;
+
+    h1 {
+      margin: 2rem 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}

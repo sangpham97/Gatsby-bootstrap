@@ -1,0 +1,18 @@
+@use 'custom';
+
+//IMPORT COMPONENTS
+@use './component/animation';
+@use './component/button';
+@use './component/mixin';
+@use './component/typography.scss';
+
+//IMPORT SECTION
+@use '../components/Navbar/navbar.module.scss';
+@use '../components/portfolio/portfolio.module.scss';
+@use '../components/companies/companies.module.scss';
+@use '../components/Faq/faq.module.scss';
+@use '../components/getStarted/getstarted.module.scss';
+@use '../components/Intro-section/Intro.module.scss';
+@use '../components/Testimonial/testimonial.scss';
+@use '../components/footer/footer.module.scss';
+@use '../components/video/video.module.scss';

@@ -1,0 +1,6 @@
+@use "../../scss/custom" as *;
+@use '../../scss/component/mixin' as *;
+
+footer {
+  background: $gray-900;
+}

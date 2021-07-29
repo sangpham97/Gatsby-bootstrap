@@ -1,0 +1,32 @@
+@use "../../scss/custom" as *;
+
+//HEADING LINE
+.heading-line {
+  position: relative;
+  display: block;
+  transform: rotate(90deg) translateY(-75px);
+
+  &::before {
+    content: "";
+    height: 10rem;
+    width: 0.1rem;
+    position: absolute;
+    background-color: $primary;
+  }
+}
+
+//BORDER
+
+.border-right {
+  border-right: 0.1rem solid $gray-300;
+  height: 100%;
+}
+
+//gradient
+.gradient {
+  background: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($secondary, 0.95)
+  );
+}

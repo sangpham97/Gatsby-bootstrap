@@ -1,0 +1,13 @@
+@use "../../scss/custom" as *;
+@use "../../scss/component/mixin" as *;
+
+.portfolio {
+  padding: 4rem 0;
+
+  button {
+    text-transform: capitalize;
+  }
+  .card {
+    height: 18.5rem;
+  }
+}
