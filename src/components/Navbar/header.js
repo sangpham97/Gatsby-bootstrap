@@ -36,11 +36,9 @@ const Header = () => {
           >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="#home">
-                  <Link to="/" className="text-decoration-none">
-                    Home
-                  </Link>
-                </a>
+                <Link to="/" className="text-decoration-none nav-link">
+                  Home
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#services">
