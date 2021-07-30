@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const Header = () => {
   const [Toggle, setToggle] = React.useState(false)
-  const [dropToggle,setDropToggle] = React.useState(false)
+  const [dropToggle, setDropToggle] = React.useState(false)
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-dark menu shadow-lg">
@@ -65,15 +65,36 @@ const Header = () => {
                   contact
                 </a>
               </li>
-               <li className="nav-item dropdown" onClick={() => setDropToggle(!dropToggle)}>
-                <a className="nav-link dropdown-toggle"  id="navbarDropdown" role="button"  >
-         My utilis
-        </a>
-        <ul className={dropToggle ? "dropdown-menu show bg-primary" : "dropdown-menu bg-primary"} >
-          <li><Link className="dropdown-item " to='/blogs' >Blog</Link></li>
-          <li><a className="dropdown-item " href="#B">Shop</a></li>
-        </ul>
-      </li>
+              <li
+                className="nav-item dropdown"
+                onClick={() => setDropToggle(!dropToggle)}
+              >
+                <a
+                  className="nav-link dropdown-toggle"
+                  id="navbarDropdown"
+                  role="button"
+                >
+                  My utilis
+                </a>
+                <ul
+                  className={
+                    dropToggle
+                      ? "dropdown-menu show bg-primary"
+                      : "dropdown-menu bg-primary"
+                  }
+                >
+                  <li>
+                    <Link className="dropdown-item " to="/blogs">
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item " to="/markdown">
+                      Mark Down
+                    </Link>
+                  </li>
+                </ul>
+              </li>
             </ul>
             <button
               type="button"

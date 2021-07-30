@@ -14,6 +14,15 @@ exports.createPages = async ({ graphql, actions }) => {
           slug
         }
       }
+      posts: allMarkdownRemark(
+        filter: { frontmatter: { author: { ne: null } } }
+      ) {
+        nodes {
+          frontmatter {
+            slug
+          }
+        }
+      }
     }
   `)
 
@@ -33,6 +42,15 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve(`src/templates/blog-template.js`),
       context: {
         slug: blog.slug,
+      },
+    })
+  })
+  result.data.posts.nodes.forEach(post => {
+    createPage({
+      path: `/markdown/${post.frontmatter.slug}`,
+      component: path.resolve(`src/templates/markdown-template.js`),
+      context: {
+        slug: post.frontmatter.slug,
       },
     })
   })
