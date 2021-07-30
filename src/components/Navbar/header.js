@@ -37,7 +37,9 @@ const Header = () => {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link " aria-current="page" href="#home">
-                  Home
+                  <Link to="/" className="text-decoration-none">
+                    Home
+                  </Link>
                 </a>
               </li>
               <li className="nav-item">

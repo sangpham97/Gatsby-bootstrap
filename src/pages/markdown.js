@@ -39,7 +39,7 @@ const MarkDown = () => {
                   to={`/markdown/${slug}`}
                   className="text-decoration-none text-dark "
                 >
-                  <div className="col-12 col-md-8 m-2 shadow-lg p-2 ">
+                  <div className="col-12 col-md-8 m-2 shadow-lg p-2 mx-auto">
                     <div className="row mx-auto">
                       <div className="col-4 col-md-2">
                         <GatsbyImage image={img} alt="image" />
