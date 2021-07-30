@@ -15,7 +15,7 @@ const MarkDown = () => {
             title
             image {
               childImageSharp {
-                gatsbyImageData(layout: FIXED, width: 100)
+                gatsbyImageData(layout: FIXED, width: 110)
               }
             }
           }
@@ -40,7 +40,7 @@ const MarkDown = () => {
                   className="text-decoration-none text-dark "
                 >
                   <div className="col-12 col-md-8 m-2 shadow-lg p-2 mx-auto">
-                    <div className="row mx-auto">
+                    <div className="row justify-content-around ">
                       <div className="col-4 col-md-2">
                         <GatsbyImage image={img} alt="image" />
                       </div>
